@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body bgcolor="#FFCCCC">
+    <table>
+        <tr>
+            <td style="background-color:aquamarine;width:50px;height:50px;" onmouseover="cc1('aquamarine');"></td>
+            <td style="background-color:#99FF33;width:50px;height:50px;" onmouseover="cc1('#99FF33');"></td>
+            <td style="background-color:#CCBBFF;width:50px;height:50px;" onmouseover="cc1('#CCBBFF');"></td>
+            <td style="background-color:#7700FF;width:50px;height:50px;" onmouseover="cc1('#7700FF');"></td>
+            <td style="background-color:#FF8888;width:50px;height:50px;" onmouseover="cc1('#FF8888');"></td>
+        </tr>
+    </table>
+
+    <script>
+             function cc1(xx) {
+                 document.bgColor = xx;
+             }
+    </script>
+
+    <br/>
+    <form>
+        姓別:<input type="radio" name="redGender" value="1" checked/>男
+        <input type="radio" name="redGender" value="1" checked />女
+        <br /><p/>
+        年齡:
+        <select name="selGame">
+            <option value="year" selected>20-30</option>
+            <option value="year" selected>31-40</option>
+            <option value="year" selected>41-50</option>
+            <option value="year" selected>51以上</option>
+
+        </select>
+        <p/>
+
+        是否交易過加密貨幣
+        <input type="checkbox" name="chkGame" value="yes" />是
+        <input type="checkbox" name="chkGame" value="no" />否
+
+        <p/>
+        介紹是否清楚:
+        <input type="checkbox" name="chkGame" value="yes" />是
+        <input type="checkbox" name="chkGame" value="no" />否
+
+        <p/>
+        訊息:<br />
+        <textarea rows="4" cols="30" name="textName">請填寫意見</textarea>
+
+    </form>
+
+    <script>
+         function fn() {
+             alert("謝謝您的填寫");
+         }
+    </script>
+    <input type="submit" value="確認送出" onclick="fn();" />
+    <pr/>
+    
+
+
+    <input type="button" onclick="history.back()" value="回到上一頁"></input>.
+
+
+    
+
+</body>
+</html>
